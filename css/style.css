@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.container{
+    width: 84%;
+    max-width: 1365px;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+}
+header {
+    background-image: url('../images/saturday-lotto-header-bg.png');
+    background-position: center left 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 780px;
+}
+.warning-top-bar{
+    background: #F1201E;
+    text-align: center;
+    padding: 4px;
+}
+.warning-top-bar > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+}
+.warning-top-bar > p > img{
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+.header-logo > a > img{
+    width: 100.763px;
+    height: 66px;
+    flex-shrink: 0;
+    aspect-ratio: 100.76/66.00;
+}
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+button.login-btn{
+    border-radius: 8px;
+    border: 0.7px solid #FFF;
+    background: linear-gradient(180deg, #F1201E 0%, #F34545 100%);
+    box-shadow: 0px 4px 25px 0px rgba(241, 32, 30, 0.35);
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    width: 130px;
+    height: 45px;
+    padding: 7px 33px;
+    font-family: "Bebas Neue";
+}
+button.register-btn{
+    border-radius: 8px;
+    border: 0.7px solid #FFF;
+    background: linear-gradient(180deg, #272727 0%, #000 100%);
+    box-shadow: 0px 4px 25px 0px rgba(241, 32, 30, 0.35);
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    width: 130px;
+    height: 45px;
+    padding: 7px 33px;
+    font-family: "Bebas Neue";
+}
+.banner-context{
+    padding: 100px 0px ;
+}
+.banner-context > h1{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+    width: 60%;
+}
+.banner-context > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 58%;
+}
+button.banner-btn{
+    border-radius: 8px;
+    border: 0.7px solid #FFF;
+    background: linear-gradient(180deg, #F1201E 0%, #F34545 100%);
+    box-shadow: 0px 4px 25px 0px rgba(241, 32, 30, 0.35);
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    padding: 7px 33px;
+    margin: 30px 0px;
+}
+.timing-section {
+    background-image: url('../images/lighting-img.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 150px 0px 200px 0px;
+    width: 100%;
+    background-position: 54% 17%;
+}
+.title-heading > h2 {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding: 20px 0px;
+}
+.time-count-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+}
+.time-content {
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, #F60D0B 0%, #F34545 100%);
+    box-shadow: 0px 4px 30px 0px rgba(241, 32, 30, 0.35);
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time-content h3 {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    margin: 0;
+}
+.time-content p {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 0;
+    position: relative;
+    top: -10px;
+}
+.colon {
+    font-size: 70px;
+    font-family: "Bebas Neue";
+    color: #FFF;
+    font-weight: bold;
+    line-height: 100px;
+}
+.highlight-shadow{
+    text-align: center;
+}
+.about-section{
+    padding: 70px 0px 40px 0px;
+}
+.about-flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+.about-content > h2{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+.about-content > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.about-content > p > span{
+    color: #F34545;
+}
+.result-section{
+    padding: 0px 0px 80px 0px;
+}
+.result-title > h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+.result-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+.result-card{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    background: linear-gradient(180deg, #272727 0%, #0C0C0C 100%);
+    text-align: center;
+    flex-shrink: 0;
+    height: 310px;
+    flex-shrink: 0;
+}
+.result-img {
+    position: relative;
+}
+.result-img > img {
+    position: absolute;
+    top: -90px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+}
+img.result-img-2 {
+    width: 200px;
+    height: 150px;
+}
+img.result-img-3 {
+    width: 320px;
+    height: 175px;
+    flex-shrink: 0;
+    aspect-ratio: 66/37;
+}
+.result-card-content{
+    padding: 90px 0px 20px 0px;
+}
+.result-card-content > h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.result-card-content > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.lotto-num{
+    padding: 30px 0px 0px 0px;
+}
+.lotto-num > span {
+    background: #F1201E;
+    box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.56) inset;
+    filter: drop-shadow(0px 4px 10px rgba(241, 32, 30, 0.42));
+    border-radius: 100px;
+    width: 36px;
+    display: inline-flex;
+    height: 36px;
+    padding: 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+}
+span.lotto-num-w{
+    background-color: #fff !important;
+    color: #151515 !important;
+}
+.time-result{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="warning-top-bar">
+                <p><img src="images/waring-top-bar.png" alt="18+ Restriction Logo">Accessible only persons aged 18 and over. Please gamble responsibly.</p>
+            </div>
+            <div class="container">
+                <div class="header-menu">
+                    <div class="header-logo">
+                        <a href="">
+                            <img src="images/saturday-logo.png" alt="Saturday Lotto Logo">
+                        </a>
+                    </div>
+                    <div class="header-button">
+                        <a href="login.html">
+                            <button class="login-btn">Login</button>
+                        </a>
+                        <a href="register.html">
+                            <button class="register-btn">Register</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-context">
+                    <h1>Your Winning Journey Starts Here!</h1>
+                    <p>Join Saturday Lotto and experience the excitement of Australia’s most trusted lottery platform. Check results, buy tickets, and never miss a draw!</p>
+                    <a href="register.html">
+                        <button class="banner-btn">Get Started</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="timing-section">
+                <div class="container">
+                    <div class="title-heading">
+                        <h2>Time Until Next Draw</h2>
+                    </div>
+                    <div class="time-count-flex">
+                        <div class="time-content">
+                            <h3 id="hours">47</h3>
+                            <p>hours</p>
+                        </div>
+                        <span class="colon">:</span>
+                        <div class="time-content">
+                            <h3 id="minutes">59</h3>
+                            <p>minutes</p>
+                        </div>
+                        <span class="colon">:</span>
+                        <div class="time-content">
+                            <h3 id="seconds">10</h3>
+                            <p>seconds</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-shadow">
+                        <img src="images/highlight-shadow.png" alt="Highlight Shadow Image">
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="container">
+                    <div class="about-flex">
+                        <div class="about-content">
+                            <h2>Saturday Lotto</h2>
+                            <p>At <span>Saturday Lotto</span>, we bring the thrill of winning closer to you. Established to provide a secure and convenient way for players to enjoy Australia’s favorite lottery, we pride ourselves on transparency, innovation, and a customer-first approach.</p><br> <br>
+                            <p><span>Our Mission</span> <br>To create an exciting and fair lottery experience while ensuring the highest level of trust and convenience for our players.</p>
+                        </div>
+                        <div class="about-img">
+                            <img src="images/red-box-coin-about.png" alt="Red Box with full of coins image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="result-section">
+                <div class="container">
+                    <div class="result-title">
+                        <h2>Latest Result</h2>
+                    </div>
+                    <div class="result-flex">
+                        <div class="result-card">
+                            <div class="result-img">
+                                <img src="images/Latest-Result.png" alt="">
+                            </div>
+                            <div class="result-card-content">
+                                <h3>Latest Result</h3>
+                                <p>(February 22, 2025)</p>
+                                <div class="lotto-num">
+                                    <span>12</span>
+                                    <span>23</span>
+                                    <span>24</span>
+                                    <span>34</span>
+                                    <span>46</span>
+                                    <span>45</span>
+                                    <span>47</span>
+                                    <span class="lotto-num-w">6</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-img">
+                                <img src="images/Hot-Numbers.png" class="result-img-2" alt="Hot Numbers Image">
+                            </div>
+                            <div class="result-card-content">
+                                <h3>Hot Numbers</h3>
+                                <p>Have been drawn most frequently</p>
+                                <div class="lotto-num">
+                                    <span>12</span>
+                                    <span>23</span>
+                                    <span>34</span>
+                                    <span>46</span>
+                                    <span>45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-img">
+                                <img src="images/Upcoming-Draws.png" class="result-img-3" alt="">
+                            </div>
+                            <div class="result-card-content">
+                                <h3>Upcoming Draws</h3>
+                                <p>Next Draw: March 1, 2025, 8:30 PM  <br>
+                                    Tickets Available Until:  <br>
+                                    February 28, 2025 <br> <br>
+                                    
+                                    Time Remaining: <br>
+                                    <span class="time-result">3d 20:24:10</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    function startCountdown(duration) {
+        const hoursEl = document.querySelector(".time-content:nth-child(1) h3");
+        const minutesEl = document.querySelector(".time-content:nth-child(2) h3");
+        const secondsEl = document.querySelector(".time-content:nth-child(3) h3");
+
+        let endTime = localStorage.getItem("countdownEndTime");
+        if (!endTime) {
+            endTime = Date.now() + duration * 1000;
+            localStorage.setItem("countdownEndTime", endTime);
+        } else {
+            endTime = parseInt(endTime);
+        }
+
+        function updateCountdown() {
+            let remainingTime = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+            let hours = Math.floor(remainingTime / 3600);
+            let minutes = Math.floor((remainingTime % 3600) / 60);
+            let seconds = remainingTime % 60;
+
+            hoursEl.textContent = hours.toString().padStart(2, '0');
+            minutesEl.textContent = minutes.toString().padStart(2, '0');
+            secondsEl.textContent = seconds.toString().padStart(2, '0');
+
+            if (remainingTime > 0) {
+                setTimeout(updateCountdown, 1000);
+            } else {
+                localStorage.removeItem("countdownEndTime");
+            }
+        }
+
+        updateCountdown();
+    }
+
+    // Set countdown duration (e.g., 47 hours, 59 minutes, 10 seconds)
+    let countdownDuration = (47 * 3600) + (59 * 60) + 10;
+    startCountdown(countdownDuration);
+});
+
+        </script>
+    </body>
+</html>
