@@ -333,3 +333,250 @@ span.lotto-num-w{
     font-weight: 600;
     line-height: 40px;
 }
+.faq-section{
+    padding: 50px 0px;
+}
+.faq-flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 40px;
+}
+.faq-img-area > img{
+    width: 100%;
+    height: auto;
+}
+.faq-title-part > small{
+    color: #F34545;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+.faq-title-part > h2{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 12px;
+}
+.faq-part > ul{
+    list-style: none;
+}
+.faq-part > ul > li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    padding: 15px 0px;
+}
+.faq-part > ul > li:last-child {
+    border-bottom: none;
+}
+.faq-part > ul > li > h3{
+    color: #F34545;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.faq-part > ul > li > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.review-section {
+    padding: 40px 0px 80px 0px;
+    overflow: hidden;
+}
+.review-title > h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.review-slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+.review-slider-flex {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+}
+.review-card {
+    flex: 0 0 calc(33.33% - 20px); 
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    background: linear-gradient(180deg, #272727 0%, #0C0C0C 100%);
+    padding: 35px;
+    margin: 0 10px;
+    box-sizing: border-box; 
+}
+.review-card > ul > li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+.review-card > ul > li > img {
+    width: 28px;
+    margin-right: -6px;
+}
+.review-card > p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.slider-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.button-pre {
+    width: 40px;
+    height: 4px;
+    background: #F60D0B;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.button-next {
+    width: 40px;
+    height: 4px;
+    background: #303030;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.button-pre:hover, .button-next:hover {
+    background: #ff0703;
+}
+@media (max-width: 1024px) {
+    .review-card {
+        flex: 0 0 calc(50% - 20px); 
+    }
+}
+@media (max-width: 768px) {
+    .review-card {
+        flex: 0 0 calc(100% - 20px); 
+    }
+}
+.responsibile-section{
+    padding: 40px 0px;
+}
+.game-bg{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    background: linear-gradient(180deg, #272727 0%, #0C0C0C 100%);
+    padding: 50px 40px;
+}
+.gaming-title > h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    padding-bottom: 30px;
+}
+.game-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    align-items: center;
+}
+.game-context > h3{
+    color: #F34545;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+.game-context > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+.game-context > ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 12px;
+}
+.footer-section{
+    padding: 40px 0px 20px 0px;
+}
+.contact-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-logo > img{
+    width: 150px;
+}
+h3.footer-title-h3{
+    color: #F34545;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.useful-links > ul{
+    list-style: none;
+    padding-top: 15px;
+}
+.useful-links > ul > li > a{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; 
+    letter-spacing: 0.2px;
+}
+.footer-brands > h3{
+    padding-bottom: 20px;
+}
+.footer-brands > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 0px 8px;
+}
+.copyright{
+    padding: 80px 0px 5px 0px;
+}
+.copyright > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.33px;
+}
