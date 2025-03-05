@@ -14,7 +14,7 @@ body{
 button{
     cursor: pointer;
 }
-header {
+.header-section {
     background-image: url('../images/saturday-lotto-header-bg.png');
     background-position: center left 25%;
     background-repeat: no-repeat;
@@ -526,7 +526,7 @@ span.lotto-num-w{
     padding: 12px;
 }
 .footer-section{
-    padding: 40px 0px 20px 0px;
+    padding: 70px 0px 20px 0px;
 }
 .contact-flex{
     display: grid;
@@ -571,6 +571,125 @@ h3.footer-title-h3{
     padding: 80px 0px 5px 0px;
 }
 .copyright > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.33px;
+}
+.disclaimer-subpage{
+    padding: 40px 0px;
+}
+.disclaimer-context > h2{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    padding-bottom: 15px;
+}
+.disclaimer-context > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-bottom: 20px;
+}
+.disclaimer-context > ul {
+    list-style: none;
+}
+.disclaimer-context > ul > li > p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding: 5px 0px;
+}
+.disclaimer-context > ul > li > p > span {
+    color: #FF5C5C;
+}
+.subpage-section{
+    padding: 20px 0px 40px 0px;
+}
+.subpage-context > h2{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    padding-bottom: 15px;
+}
+.subpage-context > h3{
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    padding: 12px 0px;
+}
+.subpage-context > p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-bottom: 25px;
+}
+.subpage-context > ul{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-left: 35px;
+    margin-bottom: 25px;
+}
+.subpage-context > ul > li{
+    padding: 5px 0px 5px 0px;
+}
+.subpage-context > ul > li > a{
+    color: #FF5C5C;
+}
+.subpage-context > p > a{
+    color: #FF5C5C;
+}
+.subpage-footer-section {
+    padding: 40px 0px 40px 0px;
+}
+.subpage-footer-bg{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    background: linear-gradient(180deg, #272727 0%, #0C0C0C 100%);
+    padding: 40px;
+}
+.subpage-brand-logos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0px 60px 0px;
+}
+.sub-copyright{
+    padding: 25px 0px;
+    text-align: center;
+}
+.sub-copyright > p{
     color: #FFF;
     text-align: center;
     font-family: Poppins;
