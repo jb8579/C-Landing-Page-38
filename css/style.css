@@ -15,7 +15,7 @@ button{
     cursor: pointer;
 }
 .header-section {
-    background-image: url('../images/saturday-lotto-header-bg.png');
+    background-image: url('../images/lotto-banner.png');
     background-position: center left 25%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ button.login-btn{
     padding: 7px 33px;
     font-family: "Bebas Neue";
 }
-button.register-btn{
+button.signup-btn {
     border-radius: 8px;
     border: 0.7px solid #FFF;
     background: linear-gradient(180deg, #272727 0%, #000 100%);
@@ -581,7 +581,7 @@ h3.footer-title-h3{
     letter-spacing: 0.33px;
 }
 .disclaimer-subpage{
-    padding: 40px 0px;
+    padding: 20px 0px 40px 0px;
 }
 .disclaimer-context > h2{
     color: #FFF;
@@ -618,7 +618,7 @@ h3.footer-title-h3{
     color: #FF5C5C;
 }
 .subpage-section{
-    padding: 20px 0px 40px 0px;
+    padding: 40px 0px;
 }
 .subpage-context > h2{
     color: #FFF;
@@ -698,4 +698,17 @@ h3.footer-title-h3{
     font-weight: 400;
     line-height: 24px; 
     letter-spacing: 0.33px;
+}
+.red-bg-footer {
+    border-radius: 8px;
+    border: 0.7px solid #FFF;
+    background: linear-gradient(180deg, #F1201E 0%, #F34545 100%);
+    box-shadow: 0px 4px 25px 0px rgba(241, 32, 30, 0.35);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.red-bg-footer > img {
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
 }

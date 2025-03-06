@@ -1,5 +1,453 @@
-@media only screen and (max-width: 3000px) and (min-width: 2000px){
-    header {
-        min-height: 875px;
+@media only screen and (max-width: 600px) and (min-width: 300px){
+    .about-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .disclaimer-subpage {
+        padding: 20px 0px 30px 0px;
+    }
+    .subpage-footer-section {
+        padding: 40px 0px 20px 0px;
+    }
+    .useful-links > ul > li > a {
+        font-size: 14px;
+    }
+    .disclaimer-context > h2 {
+        font-size: 42px;
+    }
+    .subpage-context > h2 {
+        font-size: 42px;
+        letter-spacing: 1.5px;
+    }
+    .subpage-brand-logos {
+        justify-content: unset;
+        gap: 12px;
+        margin: 20px 0px 40px 0px;
+        flex-wrap: wrap;
+    }
+    .about-img > img {
+        width: 100%;
+    }
+    .time-content {
+        width: 90px;
+        height: 100px;
+    }
+    .highlight-shadow > img {
+        width: 100%;
+    }
+    .timing-section {
+        height: 400px;
+        padding: 150px 0px 200px 0px;
+        width: 100%;
+        background-position: 50% 17%;
+        background-size: cover;
+    }
+    .header-logo > a > img {
+        width: 87px;
+        height: auto;
+    }
+    .subpage-footer-bg {
+        padding: 40px 20px;
+    }
+    .subpage-section {
+        padding: 50px 0px 30px 0px;
+    }
+    .banner-context > h1 {
+        font-size: 45px;
+        line-height: normal;
+        letter-spacing: 2px;
+        width: 100%;
+        font-weight: 500;
+    }
+    .header-section {
+        min-height: auto;
+    }
+    .banner-context {
+        padding: 70px 0px 150px 0px;
+    }
+    button.banner-btn {
+        font-size: 20px;
+        letter-spacing: 1.3px;
+        padding: 7px 24px;
+    }
+    .banner-context > p {
+        font-size: 15px;
+        line-height: normal;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .warning-top-bar > p {
+        font-size: 11px;
+        line-height: normal;
+        display: block;
+    }
+    .warning-top-bar > p > img {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+        position: relative;
+        top: 5px;
+    }
+    button.login-btn,
+    button.signup-btn {
+        font-size: 18px;
+        letter-spacing: 1px;
+        width: 98px;
+        height: 38px;
+        padding: 0px 0px;
+    }
+    .result-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-top: 120px;
+    }
+    .faq-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 40px;
+    }
+    .game-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+        align-items: center;
+    }
+    .game-context > ul {
+        list-style: none;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+    .contact-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title-heading > h2 {
+        font-size: 44px;
+        padding: 0px 0px 30px 0px;
+    }
+    .time-content h3 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .highlight-shadow {
+        padding-top: 15px;
+    }
+    .about-section {
+        padding: 30px 0px;
+    }
+    .about-content > h2 {
+        font-size: 44px;
+    }
+    .about-content > p {
+        font-size: 15px;
+    }
+    .result-title > h2 {
+        font-size: 44px;
+    }
+    .result-img > img {
+        position: absolute;
+        top: -75px;
+        transform: translateX(-50%);
+        width: 120px;
+        height: auto;
+    }
+    .result-card {
+        height: 255px;
+        margin-bottom: 70px;
+    }
+    .result-card-content {
+        padding: 60px 0px 20px 0px;
+    }
+    img.result-img-2 {
+        width: 155px !important;
+        height: 115px !important;
+    }
+    img.result-img-3 {
+        width: 250px !important;
+        height: 135px !important;
+    }
+    .result-section {
+        padding: 0px;
+    }
+    .faq-section {
+        padding: 0px 0px 10px 0px;
+    }
+    .faq-title-part > h2 {
+        font-size: 45px;
+    }
+    .faq-part > ul > li > h3 {
+        font-size: 17px;
+    }
+    .faq-title-part > small {
+        font-size: 22px;
+    }
+    .faq-part > ul > li > p {
+        font-size: 13px;
+    }
+    .review-title > h2 {
+        font-size: 44px;
+        padding-bottom: 35px;
+    }
+    .responsibile-section {
+        padding: 0px 0px;
+    }
+    .gaming-title > h2 {
+        font-size: 44px;
+    }
+    .game-flex {
+        gap: 0px;
+    }
+    .game-bg {
+        padding: 40px 40px;
+    }
+    .footer-logo > img {
+        width: 130px;
+    }
+    .contact-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .copyright {
+        padding: 50px 0px 10px 0px;
+    }
+    .result-card-content > h3 {
+        font-size: 22px;
+    }
+    .game-context > h3 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 300px){
+    .banner-context {
+        padding: 50px 0px 150px 0px !important;
+    }
+    .time-content {
+        width: 70px !important;
+        height: 85px !important;
+    }
+    .time-content h3 {
+        font-size: 44px !important;
+        line-height: 60px;
+    }
+    .highlight-shadow {
+        padding-top: 0px;
+    }
+    .lotto-num > span {
+        width: 30px;
+        height: 30px;
+        font-size: 15px !important;
+    }
+    .time-content p {
+        font-size: 14px !important;
+    }
+    .game-bg {
+        padding: 40px 15px;
+    }
+    .game-context > ul {
+        gap: 6px !important;
+        padding: 5px 0px !important;
+    }
+    .review-section {
+        padding: 40px 0px 60px 0px;
+    }
+    button.login-btn, button.signup-btn {
+        width: 90px;
+        height: 38px;
+    }
+}
+@media only screen and (max-width: 868px) and (min-width: 601px){
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0px 20px;
+        overflow-x: hidden;
+    }
+    .banner-context {
+        padding: 50px 0px 120px 0px;
+    }
+    .header-section {
+        min-height: auto;
+        background-position: center left 6%;
+    }
+    .banner-context > h1 {
+        font-size: 55px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2px;
+        width: 70%;
+    }
+    .about-section {
+        padding: 90px 0px 0px 0px;
+    }
+    .popup {
+        width: 75% !important;
+    }
+    .banner-context > p {
+        width: 60% !important;
+        font-size: 15px;
+    }
+    .about-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 0px;
+    }
+    .title-heading > h2 {
+        font-size: 60px;
+    }
+    .about-content > h2 {
+        font-size: 50px;
+    }
+    .about-content > p {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .result-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .result-card {
+        margin-bottom: 80px;
+    }
+    .faq-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .faq-section {
+        padding: 0px 0px 50px 0px;
+    }
+    .result-section {
+        padding: 0px 0px 0px 0px;
+    }
+    .review-section {
+        padding: 0px 0px 60px 0px;
+    }
+    .result-title > h2 {
+        font-size: 50px;
+    }
+    .faq-title-part > h2 {
+        font-size: 50px;
+    }
+    .faq-part > ul > li > h3 {
+        font-size: 17px;
+    }
+    .review-title > h2 {
+        font-size: 50px;
+    }
+    .gaming-title > h2 {
+        font-size: 50px;
+    }
+    .game-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    .about-img > img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 869px){
+    .container {
+        width: 90% !important;
+        max-width: 100% !important;
+        padding: 0px 20px;
+        overflow-x: hidden;
+    }
+    .banner-context {
+        padding: 50px 0px 120px 0px;
+    }
+    .header-section {
+        min-height: auto;
+        background-position: center left 6%;
+    }
+    .banner-context > h1 {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2px;
+        width: 70%;
+    }
+    .about-section {
+        padding: 90px 0px 0px 0px;
+    }
+    .popup {
+        width: 75% !important;
+    }
+    .banner-context > p {
+        width: 60% !important;
+        font-size: 15px;
+    }
+    .about-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 0px;
+    }
+    .title-heading > h2 {
+        font-size: 60px;
+    }
+    .about-content > h2 {
+        font-size: 60px;
+    }
+    .about-content > p {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .result-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .result-card {
+        margin-bottom: 80px;
+    }
+    .faq-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .faq-section {
+        padding: 0px 0px 50px 0px;
+    }
+    .result-section {
+        padding: 0px 0px 0px 0px;
+    }
+    .review-section {
+        padding: 0px 0px 60px 0px;
+    }
+    .result-title > h2 {
+        font-size: 60px;
+    }
+    .faq-title-part > h2 {
+        font-size: 60px;
+    }
+    .faq-part > ul > li > h3 {
+        font-size: 17px;
+    }
+    .review-title > h2 {
+        font-size: 60px;
+    }
+    .gaming-title > h2 {
+        font-size: 60px;
+    }
+    .game-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    .about-img > img {
+        width: 100%;
     }
 }

@@ -2,15 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Saturday Lotto - Play & Win Big in Australia</title>
+        
+        <meta name="description" content="Play Saturday Lotto and stand a chance to win life-changing jackpots. Check results, strategies, and tips for the best lottery experience in Australia.">
+        <meta name="keywords" content="Saturday Lotto, Lotto Australia, Saturday Lotto results, play lottery, lottery jackpot, winning numbers">
+        <meta name="author" content="Saturday Lotto">
+        
+        <meta property="og:title" content="Saturday Lotto - Play & Win Big in Australia">
+        <meta property="og:description" content="Join Saturday Lotto for a chance to win huge prizes! Get the latest results, winning strategies, and exclusive lottery insights.">
+        <meta property="og:image" content="https://saturdaylotto.com/images/lotto-banner.png">
+        <meta property="og:url" content="https://saturdaylotto.com">
+        <meta property="og:type" content="website">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Saturday Lotto - Play & Win Big in Australia">
+        <meta name="twitter:description" content="Check the latest Saturday Lotto results, strategies, and winning tips to boost your chances of hitting the jackpot.">
+        <meta name="twitter:image" content="https://saturdaylotto.com/images/lotto-banner.jpg">
+        
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+        
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -25,37 +44,294 @@
                         </a>
                     </div>
                     <div class="header-button">
-                        <a href="login.html">
-                            <button class="login-btn">Login</button>
-                        </a>
-                        <a href="register.html">
-                            <button class="register-btn">Register</button>
-                        </a>
+                        <button class="login-btn" onclick="openLoginPopup()">Login</button>
+                        <button class="signup-btn" onclick="openRegisterPopup()">Register</button>
                     </div>
+                    <div id="registerPopup" class="popup-container">
+                        <div class="popup">
+                            <div class="popup-left"></div>
+                            <div class="popup-right">
+                                <span class="close-btn" onclick="closeRegisterPopup()">&times;</span>
+                                <h2>REGISTER AN ACCOUNT</h2>
+                                <p>Join thousands of users worldwide</p>
+                                <form id="registerForm">
+                                    <label>Full name</label>
+                                    <input type="text" id="fullName" required>
+                    
+                                    <label>Email address</label>
+                                    <input type="email" id="email" required>
+                    
+                                    <label>Password</label>
+                                    <input type="password" id="password" required>
+                                    <p class="password-info">Use 8+ characters with a mix of letters, numbers & symbols</p>
+                    
+                                    <label>Confirm Password</label>
+                                    <input type="password" id="confirmPassword" required><br>
+                    
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" id="ageConfirm" required> I confirm that I am 18 years older
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" id="termsConfirm" required> I agree to the Terms of Service and Privacy
+                                    </label>
+                    
+                                    <button type="submit" class="register-btn">REGISTER NOW</button>
+                                </form>
+                                <p class="have-account">Already have an account? <a href="#" onclick="openLoginPopup()">Log in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="loginPopup" class="popup-container">
+                        <div class="popup">
+                            <div class="popup-left-login"></div>
+                            <div class="popup-right">
+                                <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+                                <h2>Log in to your account</h2>
+                                <p>Join thousands of users worldwide</p>
+                                <form id="loginForm">
+                                    <label>Email address</label>
+                                    <input type="email" id="loginEmail" required>
+                    
+                                    <label>Password</label>
+                                    <input type="password" id="loginPassword" required>
+                    
+                                    <button type="submit" class="register-btn">LOGIN</button>
+                                </form>
+                                <p class="have-account"><a href="#" onclick="openForgotPasswordPopup()">Forgot Password?</a></p>
+                                <p class="have-account">Don't have an account? <a href="#" onclick="openRegisterPopup()">Register</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="forgotPasswordPopup" class="popup-container">
+                        <div class="popup">
+                            <div class="popup-left-login"></div>
+                            <div class="popup-right">
+                                <span class="close-btn" onclick="closeForgotPasswordPopup()">&times;</span>
+                                <h2>RESET PASSWORD</h2>
+                                <p>Enter your email to receive a reset link</p>
+                                <form id="forgotPasswordForm">
+                                    <label>Email address</label>
+                                    <input type="email" id="forgotPasswordEmail" required>
+                    
+                                    <button type="submit" class="register-btn">SEND RESET LINK</button>
+                                </form>
+                                <p class="have-account"><a href="#" onclick="openLoginPopup()">Back to Login</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .popup-container {
+                            display: none;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.7);
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 999;
+                        }
+                        .popup {
+                            display: flex;
+                            width: 1000px;
+                            background: #fff;
+                            border-radius: 8px;
+                            overflow: hidden;
+                        }
+                        .popup-left {
+                            width: 50%;
+                            background: url('/images/register-bg.png') center/cover;
+                            background-position: 85% 50%;
+                        }
+                        .popup-left-login {
+                            width: 50%;
+                            background: url('/images/login-bg.png') center/cover;
+                            background-position: 85% 50%;
+                            min-height: 550px;
+                        }
+                        .popup-right {
+                            width: 50%;
+                            padding: 40px;
+                            text-align: left;
+                        }
+                        .popup-right h2 {
+                            color: #0C0C0C;
+                            font-family: "Bebas Neue";
+                            font-size: 40px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            padding-top: 15px;
+                        }
+                        .popup-right p {
+                            color: #0C0C0C;
+                            font-family: Poppins;
+                            font-size: 15px;
+                            font-weight: 400;
+                            padding-bottom: 15px;
+                        }
+                        p.password-info {
+                            color: #F1201E;
+                            font-family: Poppins;
+                            font-size: 11px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding: 0px;
+                        }
+                        .close-btn {
+                            font-size: 32px;
+                            color: #333;
+                            float: right;
+                            cursor: pointer;
+                            font-weight: 600;
+                        }
+                        .close-btn:hover {
+                            color: red;
+                        }
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        label {
+                            margin-top: 8px;
+                            color: #0C0C0C;
+                            font-family: Poppins;
+                            font-size: 15px;
+                        }
+                        input {
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            border-radius: 4px;
+                            background: #E4E4E4;
+                            border: none;
+                            outline: none;
+                        }
+                        label.checkbox-container {
+                            display: flex;
+                            align-items: baseline;
+                            gap: 4px;
+                        }
+                        input[type="checkbox"] {
+                            width: 22px;
+                            position: relative;
+                            top: 2px;
+                        }
+                        .checkbox-container {
+                            color: #0C0C0C;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        button.register-btn {
+                            border-radius: 8px;
+                            background: linear-gradient(180deg, #F1201E 0%, #F34545 100%);
+                            padding: 7px;
+                            margin-top: 15px;
+                            cursor: pointer;
+                            border: none;
+                            color: #FFF;
+                            font-family: "Bebas Neue";
+                            font-size: 22px;
+                            font-weight: 500;
+                            letter-spacing: 1.15px;
+                            margin-top: 25px;
+                        }
+                        button.register-btn:hover {
+                            background: linear-gradient(180deg, #F1201E 0%, #ec3b3b 100%);
+                        }
+                        p.have-account {
+                            color: #0C0C0C;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            text-align: center;
+                            padding-top: 25px;
+                        }
+                        .have-account > a {
+                            color: #F1201E;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                        @media (max-width: 768px) {
+                            .popup {
+                                flex-direction: column;
+                                width: 90%;
+                            }
+
+                            .popup-left,
+                            .popup-left-login {
+                                display: none;
+                            }
+
+                            .popup-right {
+                                width: 100%;
+                            }
+                            .popup-right h2 {
+                                font-size: 32px;
+                                line-height: normal;
+                                padding-top: 15px;
+                            }
+                            button.register-btn {
+                                margin-top: 10px;
+                            }
+                            p.have-account {
+                                padding: 15px 0px 0px 0px;
+                            }
+                            .popup-right {
+                                padding: 30px 20px;
+                            }
+                            .close-btn {
+                                left: 0px;
+                            }
+                        }
+                    </style>
+                    <script>
+                        function openRegisterPopup() {
+                            closeAllPopups();
+                            document.getElementById("registerPopup").style.display = "flex";
+                        }
+                    
+                        function closeRegisterPopup() {
+                            document.getElementById("registerPopup").style.display = "none";
+                        }
+                    
+                        function openLoginPopup() {
+                            closeAllPopups();
+                            document.getElementById("loginPopup").style.display = "flex";
+                        }
+                    
+                        function closeLoginPopup() {
+                            document.getElementById("loginPopup").style.display = "none";
+                        }
+                    
+                        function openForgotPasswordPopup() {
+                            closeAllPopups();
+                            document.getElementById("forgotPasswordPopup").style.display = "flex";
+                        }
+                    
+                        function closeForgotPasswordPopup() {
+                            document.getElementById("forgotPasswordPopup").style.display = "none";
+                        }
+                    
+                        function closeAllPopups() {
+                            document.getElementById("registerPopup").style.display = "none";
+                            document.getElementById("loginPopup").style.display = "none";
+                            document.getElementById("forgotPasswordPopup").style.display = "none";
+                        }
+                    
+                        window.onclick = function(event) {
+                            if (event.target.classList.contains("popup-container")) {
+                                closeAllPopups();
+                            }
+                        };
+                    </script>
                 </div>
             </div>
         </header>
         <main>
-            <section class="disclaimer-subpage">
-                <div class="container">
-                    <div class="disclaimer-context">
-                        <h2>Disclaimer</h2>
-                        <p>Saturday Lotto provides information and services related to lottery games. While we strive to ensure accuracy, we do not guarantee the correctness or completeness of any information on this site. We are not responsible for any errors or omissions. Playing the lottery involves risk, and you should only participate with funds you can afford to lose.</p>
-                        <ul>
-                            <li>
-                                <p><span>1. Age Restriction:</span> You must be 18 years or older to participate in any lottery games offered on this site.
-                                </p>
-                            </li>
-                            <li>
-                                <p><span>2. Responsible Gambling:</span> We encourage responsible gaming. If you or someone you know has a gambling problem, please seek help from a responsible gambling organization.</p>
-                            </li>
-                            <li>
-                                <p><span>3. No Financial Advice:</span> The information on this site is for informational purposes only and does not constitute financial advice.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
             <section class="subpage-section">
                 <div class="container">
                     <div class="subpage-context">
@@ -116,29 +392,49 @@
                     </div>
                 </div>
             </section>
+            <section class="disclaimer-subpage">
+                <div class="container">
+                    <div class="disclaimer-context">
+                        <h2>Disclaimer</h2>
+                        <p>Saturday Lotto provides information and services related to lottery games. While we strive to ensure accuracy, we do not guarantee the correctness or completeness of any information on this site. We are not responsible for any errors or omissions. Playing the lottery involves risk, and you should only participate with funds you can afford to lose.</p>
+                        <ul>
+                            <li>
+                                <p><span>1. Age Restriction:</span> You must be 18 years or older to participate in any lottery games offered on this site.
+                                </p>
+                            </li>
+                            <li>
+                                <p><span>2. Responsible Gambling:</span> We encourage responsible gaming. If you or someone you know has a gambling problem, please seek help from a responsible gambling organization.</p>
+                            </li>
+                            <li>
+                                <p><span>3. No Financial Advice:</span> The information on this site is for informational purposes only and does not constitute financial advice.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="subpage-footer-section">
             <div class="container">
                 <div class="subpage-footer-bg">
                     <ul class="subpage-brand-logos">
                         <li>
-                            <a href="">
-                                <img src="images/f-logo-1.png" alt="">
+                            <a>
+                                <img src="images/f-logo-1.png" alt="18+ Gambling Warning logo icon">
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/f-logo-2.png" alt="">
+                            <a href="https://resetapp.com.au/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/f-logo-2.png" alt="Reset App logo for responsible gambling">
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/f-logo-3.png" alt="">
+                            <a href="https://www.gambleaware.org/"target="_blank" rel="noopener noreferrer">
+                                <img src="images/f-logo-3.png" alt="Gamble Aware logo for gambling support">
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/f-logo-4.png" alt="">
+                            <a href="https://gamblershelp.com.au/"target="_blank" rel="noopener noreferrer">
+                                <img src="images/f-logo-4.png"  alt="Gamblers Help logo for gambling assistance">
                             </a>
                         </li>
                     </ul>
@@ -161,17 +457,44 @@
                                 <li>
                                     <a href="responsible-gaming.html">Responsible Gambling</a>
                                 </li>
+                                <li>
+                                    <a href="mailto:support@saturdaylotto.com">Contact</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="footer-brands">
                             <h3 class="footer-title-h3">brands</h3>
                             <ul>
-                                <li><img src="images/brand-1.png"></li>
-                                <li><img src="images/brand-2.png"></li>
-                                <li><img src="images/brand-3.png"></li>
-                                <li><img src="images/brand-4.png"></li>
-                                <li><img src="images/brand-5.png"></li>
-                                <li><img src="images/brand-6.png"></li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-1.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-2.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-3.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-4.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-5.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="red-bg-footer">
+                                        <img src="images/brand-logo-6.png">
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
