@@ -340,7 +340,7 @@
             </div>
         </header>
         <main>
-            <section class="timing-section">
+            <section class="timing-section"> 
                 <div class="container">
                     <div class="title-heading">
                         <h2>Time Until Next Draw</h2>
@@ -660,14 +660,19 @@
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 function startCountdown(duration) {
-                    const hoursEl = document.querySelector(".time-content:nth-child(1) h3");
-                    const minutesEl = document.querySelector(".time-content:nth-child(2) h3");
-                    const secondsEl = document.querySelector(".time-content:nth-child(3) h3");
+                    const hoursEl = document.getElementById("hours");
+                    const minutesEl = document.getElementById("minutes");
+                    const secondsEl = document.getElementById("seconds");
+
+                    function setNewEndTime() {
+                        let newEndTime = Date.now() + duration * 1000;
+                        localStorage.setItem("countdownEndTime", newEndTime);
+                        return newEndTime;
+                    }
 
                     let endTime = localStorage.getItem("countdownEndTime");
-                    if (!endTime) {
-                        endTime = Date.now() + duration * 1000;
-                        localStorage.setItem("countdownEndTime", endTime);
+                    if (!endTime || Date.now() > parseInt(endTime)) {
+                        endTime = setNewEndTime();
                     } else {
                         endTime = parseInt(endTime);
                     }
@@ -682,20 +687,19 @@
                         minutesEl.textContent = minutes.toString().padStart(2, '0');
                         secondsEl.textContent = seconds.toString().padStart(2, '0');
 
-                        if (remainingTime > 0) {
-                            setTimeout(updateCountdown, 1000);
-                        } else {
-                            localStorage.removeItem("countdownEndTime");
+                        if (remainingTime <= 0) {
+                            endTime = setNewEndTime();
                         }
                     }
 
+                    setInterval(updateCountdown, 1000);
                     updateCountdown();
                 }
 
-                // Set countdown duration (e.g., 47 hours, 59 minutes, 10 seconds)
                 let countdownDuration = (47 * 3600) + (59 * 60) + 10;
                 startCountdown(countdownDuration);
             });
+        </script>
         </script>
         <script>
             let currentIndex = 0;
